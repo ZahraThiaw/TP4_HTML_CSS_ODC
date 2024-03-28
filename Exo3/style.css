@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 90vw;
+    height:  90vh;
+    background-color: #3b3a3a;
+    position: relative;
+}
+
+.ballon{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: animationBallon .8s linear infinite;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes animationBallon{
+    0%{
+        top: 10%;
+    }
+    
+    100%{
+        top: 80%;
+    }
+}

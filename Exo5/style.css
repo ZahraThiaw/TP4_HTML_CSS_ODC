@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 50vw;
+    height:  100vh;
+    background-color: #3af753;
+}
+
+.boite{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 30px;
+    animation: animationBoite 2s linear infinite;
+}
+
+@keyframes animationBoite{
+    0%{
+        transform: translate(-50%,-50%) perspective(400px) rotateX(0deg) rotateY(0deg);
+    }
+    50%{
+        transform: translate(-50%,-50%) perspective(400px) rotateX(180deg) rotateY(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) perspective(400px) rotateX(180deg) rotateY(-180deg);
+    }
+}

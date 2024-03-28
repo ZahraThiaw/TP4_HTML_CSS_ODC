@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 90vw;
+    height:  90vh;
+    background-color: #3b3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cercle1, .cercle2{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+.cercle1{
+    position: absolute;
+}
+.cercle2{
+    position: absolute;
+    
+}
